@@ -1,0 +1,30 @@
+.sectionOne{
+	width: 100%;
+	height: 100vh;
+	background-image: url("images/bg1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.logo img{
+	height: 10vh;
+	width: 12vw;
+}
+.overlay{
+	position: absolute;
+	height: 100vh;
+	width:100%;
+	background-color:rgba(0,0,0,0.3); 
+}
+.contain{
+	height: 100vh;
+	width: 100vw;
+}
+.logo2{	
+}
+.logo2 img{
+	opacity: 0.3;
+	width: 40vw;
+	height: 40vh;
+	border-radius: 50px;
+}
