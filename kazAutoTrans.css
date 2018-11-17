@@ -20,11 +20,38 @@
 	height: 100vh;
 	width: 100vw;
 }
-.logo2{	
-}
 .logo2 img{
 	opacity: 0.3;
 	width: 40vw;
 	height: 40vh;
 	border-radius: 50px;
+}
+.search i{
+	margin-left: 70px;
+}
+.search input[type='text'] {
+	position: absolute;
+	right: 5px;
+	top: 100%;
+	border: none;
+	background: rgba(255, 255, 255, 0.17);
+	padding: 10px 20px;
+	opacity: 0;
+	outline: 1px solid #fff;
+	outline-offset: 5px;
+	margin-top: 5px;
+	color: #fff;
+	visibility: hidden;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.search input[type='text']:focus {
+	visibility: visible;
+	opacity: 1;
+}
+
+.search:hover input[type='text'] {
+	opacity: 1;
+	visibility: visible;
 }
