@@ -129,7 +129,7 @@ body{
 	width: 4vw;
 }
 .scrollUp{
-	display: none;
+	  display: none;
 	  position: fixed;
 	  bottom: 20px;
 	  right: 30px;
@@ -190,6 +190,9 @@ body{
 }
 /*for ipad and ipad pro*/
 @media (max-width: 1024px) and (min-width: 415px){
+	.scrollUp{
+		display: none;
+	}
 .sectionOne .navbar{
 	width: 100vw;
 }
@@ -214,9 +217,26 @@ body{
     color: rgba(255,255,255,0.7);
     margin-right: 4vw;
  }
-  .Navbar__ToggleShow {
-    display: flex;
-  }
+  .navInfo{
+ 	display: flex;
+ 	flex-direction: column;
+ 	background-color: rgba(0,0,0,0.9);
+ 	width: 100vw;
+ 	height: 100vh;
+ 	position: absolute;
+ 	text-align: right;
+ 	top: 0;
+ 	right: 0;
+ }
+ .navInfo .ul{
+ 	display: flex;
+ 	flex-direction: column;
+ 	margin-top: 15vh;
+ 	margin-right: 10vw;
+ }
+.navInfo .ul a{
+	font-size: 4vh;
+}
   .title{
  	width: 80vw;
  }
@@ -226,7 +246,25 @@ body{
      }
 }
 /*for mobile phones*/
+
 @media (max-width: 414px){
+html,body{
+	width: 100%;
+	margin:0;
+	padding: 0;
+	overflow-x: hidden;
+}
+.scrollUp{
+	bottom: 20px;
+  	padding: 0;
+    right:10vw;
+    height: 9vh;
+    width: 7vw;
+}
+.scrollUp img{
+	height: 10vh;
+	width: 12vw;
+}
 .sectionOne .navbar{
 	width: 100vw;
 }
@@ -269,8 +307,6 @@ body{
  	margin-top: 15vh;
  	margin-right: 10vw;
  }
-
-
  .main{
  	width: 100%;
  }
@@ -314,21 +350,13 @@ body{
 }
 #cardimg_1{
 	margin-left: -5%;
-	/*z-index: 1;*/
 	width: 45%;
-/*	height:auto;
-	overflow:hidden;*/
 }
 #cardimg_2{
 	margin-right: -4%;
-	/*z-index: 1;*/
 	width: 44%;
-/*	height:auto;
-	overflow:hidden;*/
 }
 .cardtxt{
-/*	z-index: 2;
-    background-color: white;*/
     width: 35%;
     height: 40%;
     padding: 3%;
@@ -351,7 +379,6 @@ body{
 	font-size:40px;
 }
 #card_1{
-	/*padding-top: 10%;*/
 	margin-right: 8%;
 	margin-left: 8%;
 	display: flex;
@@ -460,25 +487,18 @@ body{
 	height:auto;
 }
 #cardimg_1{
-	/*margin-left: -5%;*/
 	z-index: 1;
-	/*width: 45%;*/
 	height:auto;
 	overflow:hidden;
 }
 #cardimg_2{
-	/*margin-right: -4%;*/
 	z-index: 1;
-	/*width: 44%;*/
 	height:auto;
 	overflow:hidden;
 }
 .cardtxt{
 	z-index: 2;
     background-color: white;
-    /*width: 35%;
-    height: 40%;
-    padding: 3%;*/
 }
 .txt{
 	float: right;
@@ -524,7 +544,6 @@ body{
 	border-left: 4px solid #3D5AA3;
  }
  .border_right{
- 	/*background-color:#3D5AA3; */
 	position: absolute;
 	width: 11vw;
 	height:42vh;
@@ -793,18 +812,18 @@ body{
 }
 .directKzChn{
 	padding-top: 19vh;
-	margin-left: 60vw;
+	margin-left: 100vw;
 	box-sizing: padding-box;
 	position: absolute;
 }
 .directKzRus{
 	padding-top: 8vh;
-	margin-left: 40vw;
+	margin-left: 50vw;
 	position: absolute;
 }
 .directKzEur{
 	padding-top: 19vh;
-	margin-left: 30.5vw;
+	margin-left: 40.5vw;
 	position: absolute;
 }
 #textMap{
@@ -825,70 +844,54 @@ body{
 @media(min-width: 1026px){
 .directKzChn{
 	padding-top: 19vh;
-	margin-left: 60vw;
+	margin-left: 70vw;
 }
 #textMap{
 	margin-left: 7vw;
 }
-/*#sectionFive{
-	margin-bottom: 5vh;
-}*/
 }
 @media(max-width: 1025px) and (min-width: 770px){
 #sectionFive{
-	/*margin-top: 0;*/
 	height: 360px;
 	background-position: 70% 10%; 
-    /*background-color: rgba(0,0,0,1);*/
 }
 .directKzChn{
-	/*background-color: blue;*/
 	padding-top: 12%;
 	margin-left: 59%;
 }
 .directKzRus{
-	/*background-color: blue;*/
 	padding-top: 3%;
 	margin-left: 25%;
 }
 .directKzEur{
-	/*background-color: blue;*/
 	padding-top: 11%;
 	margin-left: 8%;
 }
 #textMap{
 	padding-top: 16%;
 	margin-left: 2%;
-	/*border: none;*/
 }
 }
 @media(max-width: 769px) and (min-width: 415px){
 #sectionFive{
-	/*margin-top: 0;*/
 	height: 38vh;
-	/*margin-bottom: 5vh;*/
 	background-position: 70% 10%; 
-    /*background-color: rgba(0,0,0,1);*/
 }
 .directKzChn{
-	/*background-color: blue;*/
 	padding-top: 11vh;
 	margin-left: 55vw;
 }
 .directKzRus{
-	/*background-color: blue;*/
 	padding-top: 3vh;
 	margin-left: 18vw;
 }
 .directKzEur{
-	/*background-color: blue;*/
 	padding-top: 11vh;
 	margin-left: 1vw;
 }
 #textMap{
 	padding-top: 20vh;
 	margin-left: 2vw;
-	/*border: none;*/
 }
 }
 @media(max-width: 414px){
@@ -897,10 +900,8 @@ body{
 	background-position: 70% 0%; 
 	background-color: rgba(0,0,0,1);
 	position: relative;
-	/*margin-bottom: 5vh;*/
 }
 .directKzChn{
-	/*background-color: blue;*/
 	padding-top: 17vh;
 	margin-left: 43vw;
 }
@@ -977,12 +978,9 @@ body{
 
 }
 .Contact{
-	/*padding: 5%;*/
 	color: #3D5AA3;
 }
-/*.adress_li{
-	margin-left: -5%;
-}*/
+
 .sectionSix{
 	display: flex;
 	align-items: center;
@@ -1010,7 +1008,6 @@ body{
 }
 .googleMap{
 	overflow:hidden;
-	/*height: 44%;*/
 }
 /*----------Footer---------*/
 .footer{

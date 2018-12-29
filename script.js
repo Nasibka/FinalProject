@@ -6,6 +6,7 @@ $(document).ready(function(){
 	    $(".title p").addClass('displayNone');
 	    $(".title div").addClass('displayNone');
 	    document.getElementById("scrollBtn").style.display = "block";
+
 	  }
 	  if($(this).scrollTop() < 300) {
 	    $(".navbar").removeClass('changeColor');
@@ -14,11 +15,11 @@ $(document).ready(function(){
 	    $(".title div").removeClass('displayNone');
 	    document.getElementById("scrollBtn").style.display = "none";
 	  }
-	  if($(this).scrollTop() > 2400){
+	  if($(this).scrollTop() > 2800){
 	  	$(".leftTruck ").addClass('leftMoving');
 	  	$(".rightTruck ").addClass('rightMoving');
 	  }
-	  if($(this).scrollTop() < 2400){
+	  if($(this).scrollTop() < 2800){
 	  	$(".leftTruck ").removeClass('leftMoving');
 	  	$(".rightTruck ").removeClass('rightMoving');
 	  }
@@ -37,20 +38,17 @@ function topFunction() {
 		$(this).toggleClass('open');
 		return false;
 	};
-
-// function myFunction() {
-//   var x = document.getElementById("myTopnav");
-//   if (x.className === "item") {
-//     x.className += " responsive";
+// function myFunction(x) {
+//   if (x.matches) { // If media query matches
+//     document.scrollUp.style.displayNone;
 //   } else {
-//     x.className = "item";
+//    document.scrollUp.style.displayNone;
 //   }
 // }
-// function classToggle() {
-//   const navs = document.querySelectorAll('.navInfo')
-  
-//   navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-// }
-// document.querySelector('.toggleMenu')
-//   .addEventListener('click', classToggle);
+
+// var x = window.matchMedia("(max-width: 414px)")
+// myFunction(x) // Call listener function at run time
+// x.addListener(myFunction)
+
+
 
