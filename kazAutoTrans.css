@@ -1133,11 +1133,39 @@ a.links:last-child:after{
 	.contacts{
 		margin-top: 15vh;
 	}
+	.Copyright{
+		width: 90vw;
+	}
+	.Copyright p{
+		font-size: 13px;
+	}
+	.Copyright a{
+		font-size: 13px;
+	}
 }
 /*for ipad and ipad pro*/
 @media (max-width: 1024px) and (min-width: 415px){
 	.menu{
 		width: 100vw;
+	}
+	.footer{
+		width: 100%;
+	}
+	.footerInfo{
+		width: 100%;
+	}
+	.contacts span{
+		font-size: 20px;
+	}
+
+	.Copyright{
+		width: 80vw;
+	}
+	.Copyright p{
+		font-size: 17px;
+	}
+	.Copyright a{
+		font-size: 17px;
 	}
 
 }
