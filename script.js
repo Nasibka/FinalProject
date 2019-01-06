@@ -38,17 +38,4 @@ function topFunction() {
 		$(this).toggleClass('open');
 		return false;
 	};
-// function myFunction(x) {
-//   if (x.matches) { // If media query matches
-//     document.scrollUp.style.displayNone;
-//   } else {
-//    document.scrollUp.style.displayNone;
-//   }
-// }
-
-// var x = window.matchMedia("(max-width: 414px)")
-// myFunction(x) // Call listener function at run time
-// x.addListener(myFunction)
-
-
 

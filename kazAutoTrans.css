@@ -53,6 +53,7 @@ body{
 .ul li{
 	display: inline-block;
 }
+
 .navInfo li a{
 	color:white;
 	font-size: 20px;
@@ -208,12 +209,13 @@ body{
 .sectionOne .navInfo {
     display: none;
   }
-  .toggleMenu{
+.toggleMenu{
   	display: block;
   	cursor: pointer;
+  	z-index: 1;
   }
  .toggleMenu i{
-    font-size: 30px;
+    font-size: 40px;
     color: rgba(255,255,255,0.7);
     margin-right: 4vw;
  }
@@ -237,13 +239,23 @@ body{
 .navInfo .ul a{
 	font-size: 4vh;
 }
+ .navInfo li a{
+	color:white;
+}
+.navInfo li a.blackText{
+	color:white;
+}
   .title{
  	width: 80vw;
  }
  .title p{
 	font-size: 5vh;
 	text-align: center;
-     }
+ }
+.scrollUp img{
+	height: 8vh;
+	width: 11vw;
+}
 }
 /*for mobile phones*/
 
@@ -262,7 +274,7 @@ html,body{
     width: 7vw;
 }
 .scrollUp img{
-	height: 10vh;
+	height: 8vh;
 	width: 12vw;
 }
 .sectionOne .navbar{
@@ -301,6 +313,12 @@ html,body{
  	top: 0;
  	right: 0;
  }
+.navInfo li a{
+	color:white;
+}
+.navInfo li a.blackText{
+	color:white;
+}
  .navInfo .ul{
  	display: flex;
  	flex-direction: column;
@@ -963,6 +981,10 @@ html,body{
 	width: 90%;
 	height: 44%;
 }
+.six_icon{
+  	width: 2vw;
+  	height: 2vw; 
+}
 }
 
 @media(max-width: 414px){
@@ -975,8 +997,16 @@ html,body{
 	width: 100%;
 	height: 50vh;
 }
+.adress_li{
+	font-size: 14px;
+}
+.adress_li img{
+  	width: 8vw;
+  	height: 6vh; 
+}
 
 }
+
 .Contact{
 	color: #3D5AA3;
 }
@@ -988,7 +1018,6 @@ html,body{
 .six_icon{
   	width: 2vw;
   	height: 2vw; 
-  	margin: 1vh;
 }
 .sectionSix li{
 	list-style: none;
@@ -1067,7 +1096,7 @@ a.links:last-child:after{
 		width: 100%;
 	}
 	.footerInfo{
-		width: 60%;
+		width: 80%;
 		height: 60vh;
 	}
 	.footerText h3{
